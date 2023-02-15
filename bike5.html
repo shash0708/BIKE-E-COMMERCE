@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="c/bike5.css">
+        <style>
+            .container{
+                width:100%;
+                height:100vh;
+                background-image:url(i/17.png);
+                background-size:cover;
+                background-position: center;
+                padding: 20px 10%;
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+<!---fist bike section start--->    
+<section>    
+    <div class="container" id="bike">
+        <nav>
+          <a href='compare.html' class="btn" ><B>COMPARE</B></a>
+        </nav>
+    
+        <div class="content">
+            <div><h2>Triumph</h2></div>
+            <h1>Bonneville T100</h1>
+            <p><I>"Triumph launched the first new Bonneville for 15 years, the Bonneville 790, at the Munich Motorcycle Show in September 2000, with a 790 cc (48 cu in) 360° crankshaft parallel-twin engine.The T100 Bonneville, styled by John Mockett and David Stride, was launched as an uprated version initially with the 790 cc engine, and from 2005 with the 865 cc engine introduced on the 2004 Thruxton, and fitted to all Bonnevilles from 2007."</I></p>
+            <h3>Choose Your Color</h3>
+            <div class="colour">
+                <div id="red"></div>
+                <div id="blue"></div>
+                <div id="black"></div>
+            </div>
+         </div>
+        </div>
+        <script>
+         let redBtn=document.getElementById("red");
+            let blueBtn=document.getElementById("blue");
+            let blackBtn=document.getElementById("black");
+            let bike=document.getElementById("bike");
+            
+        redBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/17.png)";
+}
+          blueBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/18.png)";
+}
+            blackBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/19.png)";
+}
+        </script>
+        </section>
+        </body>
+        <!---fist bike section end--->
+        
+     <!---second bike section end--->
+</html>

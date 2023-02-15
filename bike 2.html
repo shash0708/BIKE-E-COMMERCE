@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="c/bike1.css">
+        <style>
+            .container{
+                width:100%;
+                height:100vh;
+                background-image:url(i/1.png);
+                background-size:cover;
+                background-position: center;
+                padding: 20px 10%;
+                
+            }
+        </style>
+    </head>
+    <body>
+        
+<!---fist bike section start--->        
+    <div class="container" id="bike">
+        <nav>
+          <a href='compare.html' class="btn" ><B>COMPARE</B></a>
+        </nav>
+    
+        <div class="content">
+            <div><h2>JAWA</h2></div>
+            <h1>PERAK</h1>
+            <p><I>"Jawa was first reported by French explorer Antoine Poidebard, who flew over and photographed the site in 1931, mistaking it for Roman ruins.Before and after Poidebard's discovery, several archaeological expeditions came close to but missed the site. Finally, in 1950, an expedition led by epigrapher F. V. Winnett reached the site and documented some of the inscriptions there."</I> </p>
+            <h3>choose your color</h3>
+            <div class="colour">
+                <div id="pink"></div>
+                <div id="black"></div>
+                <div id="blue"></div>
+            </div>
+         </div>
+        </div>
+        <script>
+         let pinkBtn=document.getElementById("pink");
+            let blackBtn=document.getElementById("black");
+            let blueBtn=document.getElementById("blue");
+            let bike=document.getElementById("bike");
+            
+        pinkBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/1.png)";
+}
+          blackBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/2.png)";
+}
+            blueBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/3.png)";
+}
+        </script>
+        </body>
+</html>

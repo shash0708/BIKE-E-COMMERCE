@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="c/bike3.css">
+        
+            <style>.container{
+                width:100%;
+                height:100vh;
+                background-image:url(i/7.png);
+                background-size:cover;
+                background-position: center;
+                padding: 20px 10%;
+                
+            }</style>
+    </head>
+    <body>
+        
+<!---fist bike section start--->        
+    <div class="container" id="bike">
+        <nav>
+          <a href='compare.html' class="btn" ><B>COMPARE</B></a>
+        </nav>
+    
+        <div class="content">
+            <div><h2>Harley Davidson</h2></div>
+            <h1>Iron 883</h1>
+            <p><I>"Harley-Davidson is noted for a style of customization<br> that gave rise to the chopper motorcycle style. <br>The company traditionally marketed heavyweight, <br>air-cooled cruiser motorcycles with engine displacements<br> greater than 700 cc, but it has broadened its offerings to include more contemporary VRSC (2002) and middle-weight Street (2015) platforms."</I> </p>
+            <h3>choose your color</h3>
+            <div class="colour">
+                <div id="red"></div>
+                <div id="blue"></div>
+                <div id="black"></div>
+            </div>
+         </div>
+        </div>
+        <script>
+         let redBtn=document.getElementById("red");
+            let blueBtn=document.getElementById("blue");
+            let blackBtn=document.getElementById("black");
+             let bike=document.getElementById("bike");
+            
+        redBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/7.png)";
+}
+          blueBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/6.png)";
+}
+            blackBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/9.png)";
+}
+        </script>
+        </body>
+        <!---fist bike section end--->
+        
+     <!---second bike section end--->
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="c/bike4.css">
+        <style>
+            .container{
+                width:100%;
+                height:100vh;
+                background-image:url(i/14.png);
+                background-size:cover;
+                background-position: center;
+                padding: 20px 10%;
+                
+            }
+        </style>
+    </head>
+    <body>
+        
+<!---fist bike section start--->        
+    <div class="container" id="bike">
+        <nav>
+          <a href='compare.html' class="btn" ><B>COMPARE</B></a>
+        </nav>
+    
+        <div class="content">
+            <div><h2>BMW</h2></div>
+            <h1>G 310 R</h1>
+            <p><I>"Gear up with excitement to witness adventures in its true form. BMW G 310 R is all set to treat you with its charm. Every day is a fresh chance to attempt something different - with the BMW G 310 R. The whole set includes everything you need, including a contemporary daylight running light."</I></p>
+            <h3>choose your color</h3>
+            <div class="colour">
+                <div id="red"></div>
+                <div id="blue"></div>
+                <div id="black"></div>
+            </div>
+         </div>
+        </div>
+        <script>
+         let redBtn=document.getElementById("red");
+            let blueBtn=document.getElementById("blue");
+            let blackBtn=document.getElementById("black");
+            let bike=document.getElementById("bike");
+            
+        redBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/14.png)";
+}
+          blueBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/15.png)";
+}
+            blackBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/16.png)";
+}
+        </script>
+        </body>
+        <!---fist bike section end--->
+        
+     <!---second bike section end--->
+</html>

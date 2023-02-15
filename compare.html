@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <script>var product=[
+    {
+        "id":0,
+        "title":"",
+        "price":"",
+        "brand":"",
+        "description":"",
+        "Mileage":"",
+        "Engine":"",
+        "Weight":"",
+        "Body":"",
+        "Ratings":"",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"},
+        {"id":1,
+        "title":" jawa",
+        "image":"i/a.png",
+        "brand":"jawa",
+        "price":"2.75 lakhs",
+        "Mileage":"30km/L",
+        "Engine":"334cc",
+        "Weight":"175kg",
+        "Body":"Steel",
+        "Ratings":"i/w1.jpeg"},
+            {
+                "id":2,
+            "title":"BMW G 310 R",
+            "image":"i/b.png",
+            "brand":"BMW",
+            "price":"3.10 lakhs",
+            "Mileage":"32km/L",
+            "Engine":"313cc",
+            "Weight":"164kg",
+            "Body":"Steel",
+            "Ratings":"i/w2.jpeg"},
+            {
+            "id":3,
+            "title":"Kawasaki Ninja ZX-10R",
+            "image":"i/d.png",
+            "brand":"Kawasaki",
+            "price":"17.85 lakhs",
+            "Mileage":"15km/L",
+            "Engine":"998cc",
+            "Weight":"207kg",
+            "Body":"Alum",
+            "Ratings":"i/w3.jpeg"},
+            {
+                "id":4,
+                "title":"Harley Davidson Iron 883",
+                "image":"i/c.png",
+                "brand":"Harley Davidson",
+                "price":"11.9 lakhs",
+                "Mileage":"12 to 17km/L",
+                "Engine":"883cc",
+                "Weight":"228kg",
+                "Body":"Iron",
+                "Ratings":"i/w4.jpeg"},
+                {
+                    "id":5,
+                    "title":"Triumph Bonneville T100",
+                    "image":"i/e.png",
+                    "brand":"Triumph",
+                    "price":"10.68 lakhs",
+                    "Mileage":"24km/L",
+                    "Engine":"900cc",
+                    "Weight":"228kg",
+                    "Body":"Steel",
+                    "Ratings":"i/w5.jpeg"},
+            ]
+
+
+            </script>
+<style>
+    body{
+      background-color:#000000;
+      color: aliceblue;
+     padding-left: 200px;
+    }
+    h1{
+        font-family: 'Black Ops One', cursive;
+    }
+    img{
+        width: 100%;
+        height: 250px;
+        object-fit:contain;
+    }
+    th{
+        font-size: x-large;
+       font-family: 'Playfair Display SC', serif;
+    }
+    td{
+        font-size: large;
+        font-family: 'Playfair Display SC', serif;
+    }
+</style>
+</head>
+<body>
+    
+    <h1 class="display-5 my-5 text-center" >Compare two bikes</h1>
+    <div class="continer">
+        <div class="col-md-9 mx-auto">
+            <table class="table">
+                <tr class="bg-light">
+                    <th>select product</th>
+                    <th width="300px">
+                        <select class="form-control" id="select1" onchange="item1(this.value)">
+                            <option value="0">--select anyone--</option>
+        
+                        </select>
+                    </th>
+                    <th width="300px">
+                        <select class="form-control" id="select2" onchange="item2(this.value)">
+                            <option value="0">--select anyone--</option>
+        
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Bike image</th>
+                    <td>
+                        <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/131917/jawa-42-right-side-view5.jpeg?isig=0&q=75"
+                        id="img1">
+
+                    </td>
+                    <td>
+                        <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/131917/jawa-42-right-side-view5.jpeg?isig=0&q=75"
+                        id="img2">
+
+                    </td>
+                
+                </tr>
+                <tr>
+                    <th>Bike price</th>
+                    <td id="price1">-NA-</td>
+                    <td id="price2">-NA-</td>
+                </tr>
+                
+                <tr>
+                    <th>Bike brand</th>
+                    <td id="brand1">-NA-</td>
+                    <td id="brand2">-NA-</td>
+                </tr>
+                <tr>
+                    <th>Mileage </th>
+                    <td id="mil1">-NA-</td>
+                    <td id="mil2">-NA-</td>
+                </tr>
+                <tr>
+                    <th>Engine CC </th>
+                    <td id="cc1">-NA-</td>
+                    <td id="cc2">-NA-</td>
+                </tr>
+                <tr>
+                    <th>Weight </th>
+                    <td id="wi1">-NA-</td>
+                    <td id="wi2">-NA-</td>
+                </tr>
+                <tr>
+                    <th>Body  </th>
+                    <td id="frm1">-NA-</td>
+                    <td id="frm2">-NA-</td>
+                </tr><tr>
+                    <th>Ratings </th>
+                    <td>
+                        <img src=""alt="-NA-"
+                        id="rat1">
+
+                    </td>
+                    <td>
+                        <img src=""alt="-NA-"
+                        id="rat2">
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+<!--<script src="data.js"></script>-->
+<script>
+    for(var i=1;i<product.length;i++){
+document.getElementById("select1").innerHTML+=`
+<option value="${i}">${product[i].title}</option>
+        
+`;
+document.getElementById("select2").innerHTML+=`
+<option value="${i}">${product[i].title}</option>
+        
+`;
+ }
+ function item1(a){
+   var select2= document.getElementById("select2").value;
+    if(a!=select2){
+        document.getElementById("img1").src=product[a].image
+        document.getElementById("price1").innerHTML=product[a].price
+        
+        document.getElementById("brand1").innerHTML=product[a].brand
+        document.getElementById("mil1").innerHTML=product[a].Mileage
+        document.getElementById("cc1").innerHTML=product[a].Engine
+        document.getElementById("wi1").innerHTML=product[a].Weight
+        document.getElementById("frm1").innerHTML=product[a].Body 
+        document.getElementById("rat1").src=product[a].Ratings
+
+    }
+    else{
+        document.getElementById("select1").selectedIndex =0;
+        document.getElementById("img1").src=product[0].image
+        document.getElementById("price1").innerHTML=""
+        document.getElementById("des1").innerHTML=""
+        document.getElementById("brand1").innerHTML=""
+        document.getElementById("mil1").innerHTML=""
+        document.getElementById("cc1").innerHTML=""
+        document.getElementById("wi1").innerHTML=""
+        document.getElementById("frm1").innerHTML=""
+        document.getElementById("rat1").src=""
+    }
+    
+ }
+ function item2(a){
+    var select1= document.getElementById("select1").value;
+    if(a!=select1){
+        document.getElementById("img2").src=product[a].image
+        document.getElementById("price2").innerHTML=product[a].price
+        
+        document.getElementById("brand2").innerHTML=product[a].brand
+        document.getElementById("mil2").innerHTML=product[a].Mileage
+        document.getElementById("cc2").innerHTML=product[a].Engine
+        document.getElementById("wi2").innerHTML=product[a].Weight
+        document.getElementById("frm2").innerHTML=product[a].Body 
+        document.getElementById("rat2").src=product[a].Ratings
+
+    }
+    else{
+        document.getElementById("select2").selectedIndex =0;
+        document.getElementById("img2").src=product[0].image
+        document.getElementById("price1").innerHTML=""
+        
+        document.getElementById("brand1").innerHTML=""
+        document.getElementById("mil1").innerHTML=""
+        document.getElementById("cc1").innerHTML=""
+        document.getElementById("wi1").innerHTML=""
+        document.getElementById("frm1").innerHTML=""
+        document.getElementById("rat1").src=""
+    }
+    
+ }
+</script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="c/bike.css">
+        <style>
+            .container{
+                width:100%;
+                height:100vh;
+                background-image:url(i/10.png);
+                background-size:cover;
+                background-position: center;
+                padding: 20px 10%;
+                
+            }
+        </style>
+    </head>
+        <body>
+            
+<!---fist bike section start--->        
+    <div class="container" id="bike">
+        <nav>
+            <a href='compare.html' class="btn" ><B>COMPARE</B></a>
+        </nav>
+    
+        <div class="content">
+            <div><h2>KAWASAKI</h2></div>
+            <h1>NINJA ZX-10R</h1>
+            <p>The Kawasaki Ninja ZX-10R is a motorcycle in the Ninja sport bike series from the Japanese manufacturer Kawasaki, the successor to the Ninja ZX-9R. It was originally released in 2004 and has been updated and revised throughout the years. It combines an ultra-narrow chassis, low weight, and radial brakes..</p>
+            <h3>Choose Your Color</h3>
+            <div class="colour">
+                <div id="red"></div>
+                <div id="blue"></div>
+                <div id="black"></div>
+            </div>
+         </div>
+        </div>
+        <script>
+         let redBtn=document.getElementById("red");
+            let blueBtn=document.getElementById("blue");
+            let blackBtn=document.getElementById("black");
+            let bike=document.getElementById("bike");
+            
+        redBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/10.png)";
+}
+          blueBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/11.png)";
+}
+            blackBtn.onclick=function(){
+            bike.style.backgroundImage="url(i/12.png)";
+}
+        </script>
+        </body>
+        <!---fist bike section end--->
+        
+     <!---second bike section end--->
+</html>

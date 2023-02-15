@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+    box-sizing: border-box;
+}
+.gallery{
+    font-size: 24px;
+    text-align:center;
+    color:aliceblue;
+    
+    
+}
+.pics{
+   display:90vh;
+   object-position: center;
+    color:#868181;
+    text-align: center;
+    font-size: 30px;
+}
+.pcs{
+    display:90vh;
+   object-position: center;
+    color:#868181;
+    text-align: center;
+    font-size: 30px;
+
+    }
+.pic{
+ display:90vh;
+   object-position: center;
+    color:#868181;
+    text-align: center;
+    font-size: 30px;
+}
+.picp{
+  display:90vh;
+   object-position: center;
+    color:#868181;
+    text-align: center;
+    font-size: 30px;
+  
+}
+.pi{
+  display:90vh;
+   object-position: center;
+    color:#868181;
+    text-align: center;
+    font-size: 30px;
+}
